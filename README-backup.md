@@ -1,23 +1,23 @@
 # APPS.DotConfigs
 ## all file are made on a mac for mac
 
-##List-App:
-##(Editor-Apps)
+###List-App:
+######(Editor-Apps)
 .vimrc
 .vim/
 .emacs
 .emacs.d/
 .exrc
 .nanorc
-##(Terminal-Interface)
+######(Terminal-Apps)
 .dialogrc
-##(Terminal Multiplexer)
+######(Terminal Multiplexer)
 .tmux.conf
 .screenrc
-##(Others)
+######(Others)
 .htoprc
 .vifm/
-##Mabye Needed
+######Mabye Needed
 * cmus
 * htop
 * vifm
