@@ -1,0 +1,101 @@
+## bind hotkey
+##escape ^``
+#escape ^|^| # ctrl+\ as prefix
+#escape ^@@ # ctrl+space
+escape `e # ~ as prefix
+#escape ^[[24~ # F12 nope did not work :( F2 are F12
+
+
+#ZSH # StartUp Shell
+shell "/bin/zsh" # set zsh as default shell
+
+#bindkey -k k1 select 1
+#bind C-s  
+
+# HardStatus---
+hardstatus alwayslastline
+#hardstatus string '%{= kG}[ %{G}%H %{g}][%= %{= kw}%?%-Lw%?%{r}(%{W}%n*%f%t%?(%u)%?%{r})%{w}%?%+Lw%?%?%= %{g}][%{B} %{W}%c %{g} %d-%m-%y]'
+hardstatus string "%{KY}% [ GNU-Screen ]%= [ %?%-Lw ] %=%{b} [%c] %d/%m/%y"
+
+#hardstatus string "%{g}][%= %{= kw}%?%-Lw%?%{r}(%{W}%n*%f%t%?(%u)%?%{r})%{w}%?%+Lw%?%?%= %{g}]"
+#hardstatus string "%-Lw% %n%f* %t%{-}%+Lw%<"
+#hardstatus string "%{kY} %n"
+##Watch:
+#caption always "%=%c:%s %d-%m-%Y"
+##Number-Title:
+#!!#caption always '%{= wb}%50=%n%f %t%{= wb}'
+windowlist string "%4n %h%=%f"
+
+#+-----------+
+#| .screenrc |
+#+-----------+
+
+focus
+screen -t Home 1 zsh
+screen -t htop,bc 2 htop
+#split bc
+#screen -t bc 2
+screen -t Chat 3 emacs -e erc
+screen -t vifm 4 vifm
+select 1 # most come after all "screen -t"
+#backtick 1 1 1 $HOME/.bin/watch.2# like command for screenrc
+# More User can Login in to it!! this can not Tmux do OutOfTheBox!!!!
+multiuser on
+
+msgwait 2 # 1 second messages
+# turns off the license screen
+startup_message off
+# always use a login shell
+#shell -$SHELL
+# cleaner shell title
+#shelltitle 'screen'
+# allows you to keep what was displayed on your terminal when exiting things like man, less rather than having your terminal cleared
+altscreen on
+# Make screen messages stand out a little more - black on bright green.
+sorendition "+b kG"
+# Never, ever turn this off.
+autodetach on
+# define a bigger scrollback, default is 100 lines.  Too big and you start getting into memory issues when you have many screens open.
+defscrollback 10000
+# Run everything in UTF-8.
+defutf8 on
+# Allow bold colors - necessary for some reason
+attrcolor b ".I"
+#mousetrack on does not work :(
+# Tell screen how to set colors. AB = background, AF=foreground
+#termcapinfo xterm 'Co#256:AB=\E[48;5;%dm:AF=\E[38;5;%dm'
+# Enable 256 color term
+term xterm-256color
+
+
+#---------------------#
+#| Key Bind Settings |#
+#---------------------#
+# navigating regions with Ctrl-arrows
+bindkey "^[[1;5D" prev         # left Arrow
+bindkey "^[[1;5C" next         # right Arrow
+bindkey "^[[1;5A" focus up     # up Arrow
+bindkey "^[[1;5B" focus down   # down Arrow
+# F2 puts Screen into resize mode. Resize regions using hjkl keys.
+
+#bindkey "^@@" :
+
+
+#bindkey "^[OQ" eval "command -c rsz" # enter resize mode
+# use hjkl keys to resize regions
+#bind -c rsz h eval "resize -h -5" "command -c rsz"
+#bind -c rsz j eval "resize -v -5" "command -c rsz"
+#bind -c rsz k eval "resize -v +5" "command -c rsz"
+#bind -c rsz l eval "resize -h +5" "command -c rsz"
+
+termcapinfo xterm* ti@:te@ # enable scoll for xterm
+# keybinds
+bind ',' prev # this works
+bind '.' next # this works
+
+
+#+-------------------+#
+#| TERMINAL SETTINGS |#
+#+-------------------+#
+
+### Commands:   screen -ls | awk -F. '$NF~"(Attached)" {print "kill -HUP" $1}'

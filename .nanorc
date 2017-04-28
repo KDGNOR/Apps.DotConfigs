@@ -1,0 +1,19 @@
+## Nano-HighLighting
+
+## Files need .names to work (sorry)
+#include /opt/local/share/nano/sh.nanorc
+#include /opt/local/share/nano/xml.nanorc
+#include /opt/local/share/nano/python.nanorc
+#include /opt/local/share/nano/nanorc.nanorc
+#include /opt/local/share/nano/html.nanorc
+
+set backupdir ~/.home/.BackUpFiles
+#unset nowrap
+
+#set const #ExtraLine Info
+#set boldtext #(InterFace)
+#set nohelp #(bottom Line)
+
+set mouse # mark and umark lines - for copy,cut.
+
+#set const # add lines numbers
