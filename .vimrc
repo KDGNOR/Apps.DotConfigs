@@ -16,6 +16,7 @@ set hidden " buffer-thing...
 set encoding=utf-8
 set dictionary=/usr/share/dict/words
 set synmaxcol=800 " Don't try to highlight lines longer than 800 characters.
+set showcmd " show any commands
 " ah2h
 " Vim Plugins :
 set runtimepath^=~/.vim/bundle/ctrlp.vim
@@ -26,6 +27,13 @@ set runtimepath^=~/.vim/bundle/plugin/buftabline.vim
 " Syntax themes
 syntax enable
 colorscheme wombat256
+"colorscheme delek " for linux-tty 
+" note for linux u neeed 256 color enable in .bashrc or... for theme to work.
+
+"set leader
+let mapleader = ","
+
+
 
 "Terminal Only:
 "highlight Comment ctermfg=grey " works
@@ -33,34 +41,35 @@ colorscheme wombat256
 "highlight Normal ctermfg=yellow " works
 "highlight StatusLine gui="yellow"
 "highlight Normal gui="yellow"
-"----------------------------------"
-"GUI Only:
-set guioptions-=r 
-set guioptions-=T
-set antialias
-set guifont=Menlo\ Regular:h14
-set lines=24 columns=80
-"----------------------------------"
-highlight Comment gui=italic
-"highlight StatusLine gui=bold guifg=black guibg=yellow
-  
+
 " Seach-Settings
 set incsearch hlsearch " less searching
 hi Search ctermfg=black ctermbg=yellow
 set smartcase ignorecase  " case insensitive search
 
-" HotKeys
-nnoremap <F10><F10> :noh<CR>
+"--------------------------------------------------------"
+if has("gui_running") "GUI ONLY
+set guioptions-=r 
+set guioptions-=T
+set antialias
+set guifont=Menlo\ Regular:h14
+set lines=24 columns=80
+highlight Comment gui=italic
+"highlight StatusLine gui=bold guifg=black guibg=yellow 
+endif
+"--------------------------------------------------------" 
+" HotKeys ahah
+nnoremap <F9><F9> :noh<CR>
 nnoremap q :q<CR>
 nnoremap Q :q!
 "nnoremap <F6><F6> <C-W>w
 nnoremap <F2><F2> :split<CR>
 nnoremap <F4><F4> :vsplit<CR>
 noremap <F5> :set invnumber<CR>
-noremap <F10><Right> :tabn<CR>
-noremap <F10><Left> :tabp<CR>
-noremap <F12><Right> :bnext<CR>
-noremap <F12><Left> :bprev<CR>
+noremap <F9><Right> :tabn<CR>
+noremap <F9><Left> :tabp<CR>
+"noremap <C><Right> :bnext<CR>
+"noremap <C><Left> :bprev<CR>
 nnoremap <C><tab>   :tabnext<CR>
 inoremap <C-v> <Esc>v
 noremap <C-v> <Esc>v
@@ -74,6 +83,7 @@ map ; :
 set laststatus=2
 "set statusline=%<%f\ %h%m%r%=%{\"[\".(&fenc==\"\"?&enc:&fenc).((exists(\"+bomb\")\ &&\ &bomb)?\",B\":\"\").\"]\ \"}%k\ %-14.(%l,%c%V%)\ %P
 set modelines=0 " security problem if on..
+
 " MacOS X Tmux Only:
 if exists("$TMUX")
     let &t_EI = "\<Esc>Ptmux;\<Esc>\<Esc>]50;CursorShape=2\x7\<Esc>\\"
@@ -93,6 +103,9 @@ nnoremap _md :set ft=markdown<CR>
 "   set t_Co=256
 " endif
 
+" This sets the minimum window height to N
+"set wmh=0 "
+"set winheight=999 " set 99%
 
 " Vim Aliases
 command Q q!
