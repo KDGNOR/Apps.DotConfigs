@@ -1,0 +1,26 @@
+HTTP/1.1 200 OK
+Cache-Control: no-cache
+Content-Security-Policy: default-src 'none'; img-src data:; style-src 'unsafe-inline'
+Content-Type: image/svg+xml
+Expires: Sat, 12 Aug 2017 02:23:34 GMT
+Last-Modified: Wed, 26 Jul 2017 08:43:50 GMT
+Server: github-camo (a0471fc3)
+Strict-Transport-Security: max-age=31536000; includeSubDomains
+X-Content-Type-Options: nosniff
+X-Frame-Options: deny
+X-Xss-Protection: 1; mode=block
+X-GitHub-Request-Id: 85BA:2CB3:3797D4:3B7CF0:598E66A6
+Content-Length: 724
+Accept-Ranges: bytes
+Date: Sat, 12 Aug 2017 02:23:34 GMT
+Via: 1.1 varnish
+Age: 0
+Connection: keep-alive
+X-Served-By: cache-bma7027-BMA
+X-Cache: MISS
+X-Cache-Hits: 0
+X-Timer: S1502504614.982542,VS0,VE550
+X-Fastly-Request-ID: 3cf5a13a19b9673fd08b47437857594b90b3b487
+Timing-Allow-Origin: https://github.com
+
+<svg xmlns="http://www.w3.org/2000/svg" width="90" height="20"><linearGradient id="a" x2="0" y2="100%"><stop offset="0" stop-color="#bbb" stop-opacity=".1"/><stop offset="1" stop-opacity=".1"/></linearGradient><rect rx="3" width="90" height="20" fill="#555"/><rect rx="3" x="37" width="53" height="20" fill="#4c1"/><path fill="#4c1" d="M37 0h4v20h-4z"/><rect rx="3" width="90" height="20" fill="url(#a)"/><g fill="#fff" text-anchor="middle" font-family="DejaVu Sans,Verdana,Geneva,sans-serif" font-size="11"><text x="19.5" y="15" fill="#010101" fill-opacity=".3">build</text><text x="19.5" y="14">build</text><text x="62.5" y="15" fill="#010101" fill-opacity=".3">passing</text><text x="62.5" y="14">passing</text></g></svg>

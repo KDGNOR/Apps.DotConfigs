@@ -1,0 +1,8 @@
+# -*- mode: Lisp; eval: (shell-script-mode); -*-
+alias .alias find-file "~/.eshell/alias"
+alias .eshell find-file "~/.emacs.d/KDG/eshell.el"
+alias r eshell-read-aliases-list
+
+alias D cd ~/.home/demo
+alias bc echo Basic Calulator     quit = Exit ; bc -q
+alias O fine-file

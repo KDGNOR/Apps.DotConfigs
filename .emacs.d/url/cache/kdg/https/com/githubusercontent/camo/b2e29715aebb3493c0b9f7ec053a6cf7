@@ -1,0 +1,24 @@
+HTTP/1.1 200 OK
+Cache-Control: no-cache, no-store, must-revalidate
+Content-Security-Policy: default-src 'none'; img-src data:; style-src 'unsafe-inline'
+Content-Type: image/svg+xml;charset=utf-8
+Expires: Sat, 12 Aug 2017 02:23:32 GMT
+Server: github-camo (a0471fc3)
+Strict-Transport-Security: max-age=31536000; includeSubDomains
+X-Content-Type-Options: nosniff
+X-Frame-Options: deny
+X-Xss-Protection: 1; mode=block
+X-GitHub-Request-Id: D64E:155D:3E281E:427A88:598E66A2
+Content-Length: 0
+Accept-Ranges: bytes
+Date: Sat, 12 Aug 2017 02:23:36 GMT
+Via: 1.1 varnish
+Age: 0
+Connection: keep-alive
+X-Served-By: cache-bma7028-BMA
+X-Cache: MISS
+X-Cache-Hits: 0
+X-Timer: S1502504612.948859,VS0,VE4101
+X-Fastly-Request-ID: 901b66bb81bd3401d3fa2a4276619a9516b828fa
+Timing-Allow-Origin: https://github.com
+

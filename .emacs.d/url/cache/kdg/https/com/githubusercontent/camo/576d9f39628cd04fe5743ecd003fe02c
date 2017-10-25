@@ -1,0 +1,25 @@
+HTTP/1.1 200 OK
+Cache-Control: no-cache
+Content-Security-Policy: default-src 'none'; img-src data:; style-src 'unsafe-inline'
+Content-Type: image/svg+xml
+Last-Modified: Wed, 26 Jul 2017 13:06:23 GMT
+Server: github-camo (a0471fc3)
+Strict-Transport-Security: max-age=31536000; includeSubDomains
+X-Content-Type-Options: nosniff
+X-Frame-Options: deny
+X-Xss-Protection: 1; mode=block
+X-GitHub-Request-Id: B952:155D:3E2835:427A51:598E66A0
+Content-Length: 808
+Accept-Ranges: bytes
+Date: Sat, 12 Aug 2017 02:23:33 GMT
+Via: 1.1 varnish
+Age: 0
+Connection: keep-alive
+X-Served-By: cache-bma7021-BMA
+X-Cache: MISS
+X-Cache-Hits: 0
+X-Timer: S1502504613.860122,VS0,VE210
+X-Fastly-Request-ID: cf1affba32f3c9c5c30e8fd9731f89ae00cf90cb
+Timing-Allow-Origin: https://github.com
+
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="134" height="20"><linearGradient id="b" x2="0" y2="100%"><stop offset="0" stop-color="#bbb" stop-opacity=".1"/><stop offset="1" stop-opacity=".1"/></linearGradient><clipPath id="a"><rect width="134" height="20" rx="3" fill="#fff"/></clipPath><g clip-path="url(#a)"><path fill="#555" d="M0 0h43v20H0z"/><path fill="#922793" d="M43 0h91v20H43z"/><path fill="url(#b)" d="M0 0h134v20H0z"/></g><g fill="#fff" text-anchor="middle" font-family="DejaVu Sans,Verdana,Geneva,sans-serif" font-size="11"><text x="21.5" y="15" fill="#010101" fill-opacity=".3">melpa</text><text x="21.5" y="14">melpa</text><text x="87.5" y="15" fill="#010101" fill-opacity=".3">20170726.140</text><text x="87.5" y="14">20170726.140</text></g></svg>

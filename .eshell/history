@@ -1,0 +1,128 @@
+(message (propertize "foo" 'face '(:foreground "#FF00FF")))
+(defun lawlist-message (input) (interactive) (message (propertize input 'face 'font-lock-warning-face)))
+(defun lawlist-message (input) (interactive) (message (propertize input 'face 'font-lock-warning-face)))
+ls
+ls -a
+mv .MyTextBaseGame .MyTextBaseGame.org
+ls -a
+ls -a .My*
+exit
+exit
+exit
+exit
+exit
+exit
+exit
+term
+term
+mc
+exit
+(setq find-ls-option '("-print0 | xargs -0 ls -alhd" . "-alhd"))
+lsm
+man ls
+new-frame
+url-view-url 
+url-handler-mode 
+c
+eshell-debug
+eshell-debug
+eshell-debug | new-frame
+new-frame | eshell-debug
+c
+(what-cursor-position)
+(what-cursor-position)
+(what-cursor-position)
+(what-cursor-position)
+(what-cursor-position)
+switch-view
+(easy-menu-define my-menu my-mode-map "My own menu"		      '("My Stuff"			["One entry" my-function t]			("Sub Menu"			 ["My subentry" my-obscure-function t])))
+mumble
+mumble 
+cd ~/.emacs.d/
+mv KDG.el lisp
+cd ~/.emacs.d/
+c
+ls
+mkdir KDG
+mv KDG-* KDG/
+ls
+c
+ls -R KDG/
+mv KDG.el KDG/
+ls -R KDG/
+cd ~/.emacs.d/KDG/
+c
+(getenv "PATH")
+ls
+ls
+comint-clear-buffer
+comint-delete-output
+eshell-clear-buffer
+ls
+(let ((eshell-buffer-maximum-lines 0)) (eshell-truncate-buffer))
+ls
+ls
+clear
+ls
+c
+find-file
+find-file *
+find-file ~/.emacs.d/KDG/eshell.el 
+.alias 
+O
+c
+c
+.alias 
+bc
+.alias 
+.alias 
+.alias 
+r
+R
+eshell-read-aliases-list
+r
+c
+.alias 
+.eshell 
+.alias 
+.eshell 
+.eshell 
+recenter 0
+(recenter 0)
+c
+.alias 
+.alias 
+.alias 
+.alias 
+.alias 
+r
+.alias 
+.alias 
+.alias 
+.alias 
+.alias 
+.alias 
+.alias 
+.alias 
+killall zsh
+killall tmux
+.alias 
+.alias 
+.alias 
+cd ~/.emacs.d/KDG/
+ls
+cat eshell.el 
+cat eshell.el~
+c
+ls
+cat my-scratch.el 
+cat my-scratch.el~
+c
+ls
+rm eshell.el\~ my-scratch.el\~
+ls
+find-file eshell.el 
+r
+source ~/.emacs
+hello
+echo
